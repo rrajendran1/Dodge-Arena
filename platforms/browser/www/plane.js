@@ -29,8 +29,8 @@ function Plane(){
 	}
 	this.bombV = 0;
 	this.hitH = false;
-	explosion.pause();
-	explosion.frame(0);
+	//explosion.pause();
+	//explosion.frame(0);
 
 
 	if (this.facing){
@@ -62,7 +62,7 @@ function Plane(){
 				this.explosionH = false;
 			}
 			
-			explosion.frame(this.explosionF);
+			//explosion.frame(this.explosionF);
 			image(explosion,this.bombX,height/1.55 + width*.04,this.bombW, this.bombH);
 			if (frameCount%3 == 0){
 			this.explosionF++;

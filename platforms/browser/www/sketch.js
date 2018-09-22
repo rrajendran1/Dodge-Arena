@@ -74,13 +74,11 @@ function preload() {
 
 
   backgroundImage = loadImage("art\\countryBackground.png");
-  playerImage = loadGif("art\\" + localStorage.charEnabled + "walk.gif", function(){
-    playerImage.pause();
-  });
-  playerImage2 = loadGif("art\\" + localStorage.charEnabled + "walkLeft.gif");
+  playerImage = loadImage("art\\" + localStorage.charEnabled + "walk.gif");
+  playerImage2 = loadImage("art\\" + localStorage.charEnabled + "walkLeft.gif");
 
   if (localStorage.charEnabled == "assassin"){
-    playerIdle = loadGif("art\\assassinIdle.gif");
+    playerIdle = loadImage("art\\assassinIdle.gif");
   }
   spear = loadImage("art\\arrow.png");
   bulletImage = loadImage("art\\bullet.png");
@@ -98,7 +96,7 @@ function preload() {
   planeImage = loadImage("art\\plane.png");
   planeImage2 = loadImage("art\\plane2.png");
 
-  explosion = loadGif("art\\explosion.gif");
+  /*explosion = loadGif("art\\explosion.gif");
   baseW = loadGif("art\\basewalk.gif");
   goldenW = loadGif("art\\goldenwalk.gif");
   witchW = loadGif("art\\witchwalk.gif");
@@ -106,7 +104,16 @@ function preload() {
   soldierW = loadGif("art\\soldierwalk.gif");
   sorcererW = loadGif("art\\sorcererwalk.gif");
   rangerW = loadGif("art\\rangerwalk.gif");
-  assassinW = loadGif("art\\assassinwalk.gif");
+  assassinW = loadGif("art\\assassinwalk.gif");*/
+  explosion = loadImage("art\\explosion.gif");
+  baseW = loadImage("art\\basewalk.gif");
+  goldenW = loadImage("art\\goldenwalk.gif");
+  witchW = loadImage("art\\witchwalk.gif");
+  skeletonW = loadImage("art\\skeletonwalk.gif");
+  soldierW = loadImage("art\\soldierwalk.gif");
+  sorcererW = loadImage("art\\sorcererwalk.gif");
+  rangerW = loadImage("art\\rangerwalk.gif");
+  assassinW = loadImage("art\\assassinwalk.gif");
 
   backgroundMusic = loadSound("music\\backgroundMusic.mp3");
   hitSound = loadSound("music\\hitSound.mp3");
@@ -418,7 +425,7 @@ function draw() {
     //End Game Menu
     } else if (!adShown) {
       //admob.showInterstitialAd();
-      //adShown = true;
+      adShown = true;
     } else if (!storePopup && !creditScreen){
       /*if (bannerShow){
           admob.createBannerView({

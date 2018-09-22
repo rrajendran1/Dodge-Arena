@@ -30,8 +30,10 @@ function Player(){
 		if (this.idle){
 			image(playerIdle,this.x,this.y,this.w, this.h);
 		} else if (this.facing){
+			//playerImage.position(this.x,this.y,this.w, this.h);
 			image(playerImage,this.x,this.y,this.w, this.h);
 		} else { 
+			//playerImage2.position(this.x,this.y,this.w, this.h);
 			image(playerImage2,this.x,this.y,this.w, this.h);
 		}
 	}
@@ -75,12 +77,12 @@ function Player(){
 		}
 
 		this.facing = false;
-		if (!playerImage2.playing()){
+		/*if (!playerImage2.playing()){
 			playerImage2.play();
 		}
 		if (playerImage.playing()){
 			playerImage.pause();
-		}
+		}*/
 	}
 	this.right = function(){
 		this.idle = false;
@@ -95,12 +97,12 @@ function Player(){
 		this.velocity *=2;
 		}
 
-		if (!playerImage.playing()){
+		/*if (!playerImage.playing()){
 			playerImage.play();
 		}
 		if (playerImage2.playing()){
 			playerImage2.pause();
-		}
+		}*/
 	}
 	this.up = function(){
 		if (localStorage.charEnabled != "witch" && !(localStorage.charEnabled == "assassin" && (localStorage.p1 == "2"  || localStorage.p2 == "2"))){
@@ -114,14 +116,14 @@ function Player(){
 		}
 	}
 	this.stop = function(){
-		if (playerImage.loaded() && playerImage2.loaded() && localStorage.charEnabled != "assassin"){
-			if (this.facing){
+		if (/*playerImage.loaded() && playerImage2.loaded() && */localStorage.charEnabled != "assassin"){
+			/*if (this.facing){
 				playerImage.pause();
 				playerImage.frame(this.frameStop);
 			} else {
 				playerImage2.pause();
 				playerImage2.frame(this.frameStop);
-			}
+			}*/
 		} else if (localStorage.charEnabled == "assassin"){
 			this.idle = true;
 		}
