@@ -1,3 +1,8 @@
+Hello. Welcome to Dodge Arena. To preview this application, install the PhoneGap desktop application. In the PhoneGap Application, select the folder that you have cloned the project to, then run the file on the server it provides. 
+
+To make any changes, go to the www folder and the sketch.js, player.js, spear.js, bullet.js, explosion.js, and index.html will be the primary files to change.
+
+
 # Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
 
 A PhoneGap Hello World template
