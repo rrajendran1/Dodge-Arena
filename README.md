@@ -2,7 +2,7 @@ Hello. Welcome to Dodge Arena. To preview this application, install the PhoneGap
 
 To make any changes, go to the www folder and the sketch.js, player.js, spear.js, bullet.js, explosion.js, and index.html will be the primary files to change.
 
-JavaScript was used for development and p5.js is the library used for creating the canvas and positioning the elements.
+JavaScript is used for development and p5.js is the library used for creating the canvas and positioning the elements.
 
 
 [phonegap-cli-url]: http://github.com/phonegap/phonegap-cli
